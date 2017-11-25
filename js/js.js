@@ -13,3 +13,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+$(document).ready(function(){
+  $(".menu").click(function(){
+    $(".nav-ul").toggleClass(".active");
+  });
+})
