@@ -16,6 +16,8 @@ function topFunction() {
 
 $(document).ready(function(){
   $(".menu").click(function(){
-    $(".nav-ul").toggleClass(".active");
+    $(".navToggle").toggleClass("active");
+    console.log("it worked");
+
   });
-})
+});

@@ -12,7 +12,7 @@ section{
 .toggle{
   width: 100%;
   padding: 10px 20px;
-  background: rgba(0,0,0,0.6);;
+  background: none;
   text-align: right;
   box-sizing: border-box;
   color: #fff;
@@ -91,38 +91,6 @@ transform-origin: left;
 transform: scaleX(1);
 }
 
-@media (max-width:956px) {
-.toggle{
-  display: block;
-}
-
-.nav-ul {
-  width: 100%;
-  display: none;
-  flex-direction: column;
-}
-
-nav ul li a{
-  display: block;
-  width: 100%;
-  text-align: center;
-  background: rgba(0,0,0,0.6);;
-}
-
-.brand{
-  display: none;
-}
-
-
-nav{
-  background: rgba(0,0,0,0.6);;
-}
-
-.active{
-  display: block;
-}
-
-}
 
 .container{
 display: flex;
@@ -205,7 +173,7 @@ border: none;
  }
 
  .fa {
-  padding: 20px;
+  padding: 6px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -232,4 +200,65 @@ border: none;
 .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+
+
+
+@media (max-width:956px) {
+.toggle{
+  display: block;
+}
+
+nav ul li a{
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.6);;
+}
+
+.brand{
+  display: none;
+}
+
+
+nav{
+  background: rgba(0,0,0,0.6);;
+}
+
+.navToggle {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+.active{
+  display: block;
+}
+
+.container{
+  display: flow;
+  flex-direction: column;
+}
+
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.opj3{
+  transform: rotate(-90deg);
+  border-bottom: 5px solid rgb(193,49,49);
+  border-right: none;
+  flex: 1;
+}
+
+.opj4{
+  flex: 3;
+}
+
+
+
+
 }
